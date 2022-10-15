@@ -7,3 +7,5 @@ ScrollSmoother.create({
       wrapper: '.wrapper',
       content: '.content'
 });
+let controls = 10;
+console.log(controls);
