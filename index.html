@@ -4,13 +4,14 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+      <title>WSIT</title>
       <link rel="stylesheet" href="main.css">
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
       <script src="libs/gsap/gsap.min.js" defer></script>
       <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
       <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+      <script src="libs/gsap/sending-form.js" defer></script>
       <script src="app.js" defer></script>
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
 <div class="wrapper">
@@ -35,9 +36,17 @@
             </div>
             <article class="main-article" style="background-image: url(./img/dungeon.jpg);">
             <div class="main-article__content">
-                  <h2 class="main-article__title">To be continued</h2>
-                  <p class="main-article__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nihil ducimus quae saepe commodi repellat omnis laborum praesentium nesciunt ad nemo expedita et totam minima eius, mollitia assumenda dicta nisi.</p>
-                  <footer class="main-article__copy">© WebDesign SWIT</footer>
+                  <h2 class="main-article__title">Website development WSIT</h2>
+                  <p class="main-article__text">We value your time and money, so every job is always done on time. Contact us, the consultation is free of charge.</p>
+
+                  <form action="#" id="form" method="post" class="main-article__form form">
+                        <input class="form__name __req _mane" placeholder="Name" type="mane" name="name" id="form__name" placeholder="NAME">
+                        <input class="form__mail __req _email" placeholder="E-mail" type="email" name="mail" id="form__mail" placeholder="MAIL">
+                        
+                        <button class="main-article__button">Send</button>
+                  </form>
+                  
+                  <footer class="main-article__copy">© Web Design & Development "SWIT"</footer>
             </div>
             </article>
       </div>
