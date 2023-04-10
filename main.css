@@ -199,3 +199,45 @@ body{
 ._error{
       background-color: red;
 }
+#form[data-tooltip]::before{
+      content: attr(data-tooltip);
+      width: calc(var(--index)*18);
+      height: calc(var(--index)*1.5);
+      position: absolute;
+      top: 14%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      border: none;
+      color: red;
+      text-align: center;
+      font-size: calc(var(--index)*0.5);
+      letter-spacing: calc(var(--index)*0.15);
+}
+.main-article__form input.noValid{
+      color: red;
+      border: 0.1px solid red;
+}
+.main-article__form input.noValid::-webkit-input-placeholder{
+      color: red;
+}
+.main-article__form input.noValid::-moz-placeholder{
+      color: red;
+}
+.thank-block{
+      transition: .4s;
+      position: fixed ;
+      top: calc(var(--scrollTop) * 1.0 + 20% );
+      left: 50%;
+      background-color: rgba(7, 7, 7, 0.527);
+      padding: calc(var(--index)*5);
+      border-radius: calc(var(--index)/3);
+      transform: translate(-50%,-50%);
+      will-change: transform;
+      backdrop-filter: blur(3px);
+      flex: 0 1 auto;
+      z-index: 100;
+}
+.thank-block .thank-block__title{
+      font-size: calc(var(--index)*0.7);
+      letter-spacing: calc(var(--index)*0.18);
+}
