@@ -10,7 +10,7 @@ ScrollSmoother.create({
 
 
 const Domain = 'sandbox676bf6bff83d418394f94cf50e561973.mailgun.org';
-const Api = 'f03cb26cf1d4845c3cb19939f0f73afe-2cc48b29-d4f47651';
+
 const Recipient = 'poman207575@gmail.com';
 const form = document.querySelector('#form');
 
