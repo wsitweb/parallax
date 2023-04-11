@@ -62,16 +62,8 @@ form.addEventListener('submit', function(event) {
             }
       }
     if(validForm(mailInput, nameInput) && localCheck()){
-        const xhr = new XMLHttpRequest();
-        xhr.open('POST', `https://api.mailgun.net/v3/${Domain}/messages`);
-        xhr.setRequestHeader('Authorization', `Basic ${btoa(`api:${Api}`)}`);
-        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        xhr.onload = function() {
-            console.log(xhr.responseText);
-            document.getElementById('thank').style.display = 'block';
+        document.getElementById('thank').style.display = 'block';
             setTimeout(()=>{document.getElementById('thank').style.opacity = '0';}, 3000)
             form.reset();
-        };
-        xhr.send(`from=${encodeURIComponent('WSIT parallax website <sender@example.com>')}&to=${encodeURIComponent(Recipient)}&subject=${encodeURIComponent('New Message form "parallax"')}&text=${encodeURIComponent(`Name client: ${nameInput.value}, Mail client: <${mailInput.value}>`)}&${formData}`);
     }
 });
